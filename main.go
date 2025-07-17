@@ -2,26 +2,17 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 func main() {
-
-	printMyName()
-}
-func printMyName() {
-
-	var multiNames [50]string
-	multiNames[0] = "John Tom"
-	multiNames[1] = "Patrick Daniels"
-	multiNames[2] = "Thomas Samuel"
-	var singleNames []string
-
-	for _, n := range multiNames {
-		var names = strings.Fields(n)
-		var singleNames = append(singleNames, names[0])
-		fmt.Print(singleNames, "\n")
-
+	var email string
+	var i int = 11
+	x := 0
+	for x <= i {
+		x++
+		fmt.Print("What's is your email address?")
+		fmt.Scan(&email)
+		checkStringLength(email)
 	}
 
 }
